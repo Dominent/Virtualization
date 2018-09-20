@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLLOCATION">
+            <Directory Id="dir252616E2AD19D4C82846FC8DF10A8C91" Name="Commands" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProductFilesComponentGroup">
+            <Component Id="cmp63184932889A6FE1DE3E773CACCACFAE" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil7AB694579E493FCF495814787C50BE5B" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Build.ps1" />
+            </Component>
+            <Component Id="cmpFEC173373D3A560C7A7F6A61488E5941" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil34FE8715DEFAECB87F35B09C41941B6C" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Core.dll" />
+            </Component>
+            <Component Id="cmpE6D2E869853976A2BF2E3EE220F3DABB" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil50743457065256CDED0A7017E60CE0CB" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Core.dll.config" />
+            </Component>
+            <Component Id="cmp5903C667E5FF5FE9AD02A91B3FB01B20" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filB006C19960D720468ED4B984BA7E0638" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Core.pdb" />
+            </Component>
+            <Component Id="cmp2C81C2F7FC66293D4BD64E24FAF9460A" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil56DB4D2F6449B88CE184AF56EE099B3C" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Server.exe" />
+            </Component>
+            <Component Id="cmpE715E2C7101E277A19105C0AD305F0F7" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil2724AC3AA5DA1367A501E5622313908A" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Server.exe.config" />
+            </Component>
+            <Component Id="cmpAB59BB0B5469AD5094D85BF6B7E75FDA" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filF24634A479635ABD25D32FC0F8EDD33F" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Server.pdb" />
+            </Component>
+            <Component Id="cmpEB5081C8B44FA30612735ABDC08BF4F5" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil423F409E69534CAE33DAB1C39A91B5D1" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\KurtBit.Virtualization.Server.xml" />
+            </Component>
+            <Component Id="cmp196B2E0E9504900A93FFE2BB866DD259" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filCADD4451AD0A57758A347ADA41FAC155" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Diagnostics.dll" />
+            </Component>
+            <Component Id="cmp4A992D002826837C16E96321CA2AA995" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filC1D0FE76B090DC12644E20D95506A2C1" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Diagnostics.xml" />
+            </Component>
+            <Component Id="cmpC7BC2CB5A0A63501D89C7D7BC6DCB97B" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil0B50BC7111AADC2B0C0D576F0FFB29C3" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.dll" />
+            </Component>
+            <Component Id="cmp1CAF53E1325D6DE1FF0C6B1DC686F2EC" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil0C18A1FCD00961A9BACE19A4E8EB3D4B" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Host.HttpListener.dll" />
+            </Component>
+            <Component Id="cmpCFE79445B260B91C806D5D9C53F3E15A" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filB84E9250CF626296FE64BDD403CB308C" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Host.HttpListener.xml" />
+            </Component>
+            <Component Id="cmp4A19503B4C88966032CA75F37FF921A8" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filFC6E8BAF5AF7B019D3F1B6C17FCDC101" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Hosting.dll" />
+            </Component>
+            <Component Id="cmpAA8BDA5393518C75E8ADF2F2B0CE5781" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil252D8B1BA3F1DCB86169AA5B8B0ECAE7" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.Hosting.xml" />
+            </Component>
+            <Component Id="cmp72898534C012DF7B53865D3846E70784" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filC909DDF2151E6C23AAB67DE69E1FD47B" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Owin.xml" />
+            </Component>
+            <Component Id="cmp9C6743CB234D540AF2ED6D60AFFAA2C9" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filC9727F9EED4F59A7ACA5FEA93A6ADEB7" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Microsoft.Web.Infrastructure.dll" />
+            </Component>
+            <Component Id="cmpE48528C4F5932A4EFD89F7331108F45D" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filF1B84C2C6BCC693224B7A7959445B74F" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Newtonsoft.Json.dll" />
+            </Component>
+            <Component Id="cmpE4CCA8ADB2C554D2FCD03F8B4A383604" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filCC081F4881EB8C63FC22F14F559218AA" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Newtonsoft.Json.xml" />
+            </Component>
+            <Component Id="cmp060E0EAB19A08B32377F04956A2BAA1F" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil997A5C3BF9E356D4D06B9EC2DAC04313" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Owin.dll" />
+            </Component>
+            <Component Id="cmp00D005757877997E6B11907683C4F331" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filB6FBF744819AE1F4998D0D121183DA39" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Swashbuckle.Core.dll" />
+            </Component>
+            <Component Id="cmpEA91C11143DFF811F6600626A763E59E" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filFEB315C3C6B699CE2FC29308C8D97E21" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Net.Http.Formatting.dll" />
+            </Component>
+            <Component Id="cmp0330A8443F57FEE4828F6A1F6FD681FE" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil2AC379B9D48C053DEC5406E3672D0504" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Net.Http.Formatting.xml" />
+            </Component>
+            <Component Id="cmpED14316F6DE38D199E923D25CEEA540E" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil2CDC593D885D20F9ABDF518168DABC41" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Cors.dll" />
+            </Component>
+            <Component Id="cmpEA176BF8D486580F1B463F2557B6389B" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil4F9CDB48DE92F4403E59A34FEC213F28" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.Cors.dll" />
+            </Component>
+            <Component Id="cmp42FE685169CAC496D6D1E616937AA05D" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filA5C7033CF687FD237361C8DAEDEB5757" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.Cors.xml" />
+            </Component>
+            <Component Id="cmpE14FFAF1F3ACC5839D1BCCE279CE198E" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil37EEDCF7DFCD64074480DE2736B458B9" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.dll" />
+            </Component>
+            <Component Id="cmp65878A44BDE4CCD0005EA15F490424EA" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filC824513C3A271E27450246D0A54B50B9" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.Owin.dll" />
+            </Component>
+            <Component Id="cmp6BDD7C633C8A5EC244DD260A454F4734" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil80E1086BCA269CB4C36B459592431D58" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.Owin.xml" />
+            </Component>
+            <Component Id="cmpD37C478256A032ECB531A5AC2C6F7438" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filF4D4FACBB5FDFFA91DB624C4A2DDF013" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.WebHost.dll" />
+            </Component>
+            <Component Id="cmpFE070A3C8E9100A86C62C1991C82E184" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil4427258D8EE69D02BE03E8103A915D5B" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.WebHost.xml" />
+            </Component>
+            <Component Id="cmpBBDF883D542B13B41DA05F3401616AFC" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="fil00B3FF0D4C53DC99CB3DCDE400C8A970" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\System.Web.Http.xml" />
+            </Component>
+            <Component Id="cmp32F6B1C76717AF0069EC2E1E16DDA665" Directory="INSTALLLOCATION" Guid="*">
+                <File Id="filFF011530467E7D40C56A5130CE8D0541" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\WebActivatorEx.dll" />
+            </Component>
+            <Component Id="cmp53C21864D3E8ED3DEE9B2E25C3A24C6B" Directory="dir252616E2AD19D4C82846FC8DF10A8C91" Guid="*">
+                <File Id="filCB88836464911FA77A208E8A7ABC9F6F" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Commands\KurtBit.Virtualization.Commands.CreateVirtualMachine.zip" />
+            </Component>
+            <Component Id="cmp9201ABE100AEB2111F9F6C10C3519A14" Directory="dir252616E2AD19D4C82846FC8DF10A8C91" Guid="*">
+                <File Id="fil5C9BA7DD0B2479E58BFEF67790C77511" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Commands\KurtBit.Virtualization.Commands.DestroyVirtualMachine.zip" />
+            </Component>
+            <Component Id="cmpA9EC2C38D30892EDFD212429CD85CFCB" Directory="dir252616E2AD19D4C82846FC8DF10A8C91" Guid="*">
+                <File Id="filF276919ACD67B92A7367BBC82F4627EE" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Commands\KurtBit.Virtualization.Commands.GetVirtualMachine.zip" />
+            </Component>
+            <Component Id="cmpB3F0F0249A19B4B449B6D4AB7589ADB5" Directory="dir252616E2AD19D4C82846FC8DF10A8C91" Guid="*">
+                <File Id="fil1BE0302B6C5DBC542EE3763608D16648" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Commands\KurtBit.Virtualization.Commands.StartVirtualMachine.zip" />
+            </Component>
+            <Component Id="cmp082D026CF4A8AAD75EBCE7A3043BD854" Directory="dir252616E2AD19D4C82846FC8DF10A8C91" Guid="*">
+                <File Id="fil35D01E7DC3ABC31097FBCC04DCF1C90A" KeyPath="yes" Source="$(var.KurtBit.Virtualization.Server.TargetDir)\Commands\KurtBit.Virtualization.Commands.StopVirtualMachine.zip" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

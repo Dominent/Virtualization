@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?include ProductConfiguration.wxi ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product 
+    Id="*"
+    Name="$(var.ProductName)"
+    Language="1033"
+    Version="$(var.ProductVersion)"
+    Manufacturer="$(var.ProductManufacturer)"
+    UpgradeCode="$(var.ProductUpgradeCode)">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+		<MediaTemplate EmbedCab="yes"/>
+
+		<Feature 
+      Id="ProductFeature"
+      Title="KurtBit.Virtualization.Installer"
+      Level="1">
+			  <ComponentGroupRef Id="ProductFilesComponentGroup"/>
+		</Feature>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    <UIRef Id="WixUI_InstallDir" />
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="KurtBit.Virtualization.Server">
+          <Directory Id="ProductFilesComponentGroup" />
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+</Wix>
